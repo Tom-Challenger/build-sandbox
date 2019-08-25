@@ -1,7 +1,21 @@
 {
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"edge": "18",
+					"chrome": "54",
+					"ie": "11"
+				}
+			}
+		]
+	],
+
 	"plugins": [
+		"@babel/plugin-proposal-class-properties",
 		"@babel/plugin-transform-template-literals",
 		"@babel/plugin-transform-classes",
-		"@babel/plugin-transform-block-scoping"
+		"@babel/plugin-transform-block-scoping",
 	]
 }
