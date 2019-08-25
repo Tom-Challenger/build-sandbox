@@ -4,7 +4,7 @@
 			"@babel/preset-env",
 			{
 				"corejs": 3,
-				"useBuiltIns": "entry",
+				"useBuiltIns": "usage",
 				"debug": true,
 				"modules": false,
 				"targets": [
@@ -15,7 +15,8 @@
 					"not ie > 0"
 				]
 			}
-		]
+		],
+		"@babel/preset-react"
 	],
 
 	"plugins": [
